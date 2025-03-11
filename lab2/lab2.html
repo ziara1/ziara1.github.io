@@ -80,15 +80,35 @@
         <progress value="70" max="100"></progress>
     </section>
     
-    <section>
-        <h2>Clickable Map</h2>
-        <img src="https://www.szachysklep.com.pl/2593-medium_default/szachownica-profesjonalna-drewniana-nr-5-mahon-intarsja-standard-turniejowy-s-8.jpg" usemap="#chess-map" alt="Chess map">
-        <map name="chess-map">
-            <area shape="rect" coords="0,0,100,100" href="#gambit" alt="King's Gambit">
-            <area shape="circle" coords="150,150,50" href="#sicilian" alt="Sicilian Defense">
-            <area shape="poly" coords="200,200,250,250,200,300" href="#french" alt="French Defense">
-        </map>
-    </section>
+<section>
+    <h2>Interactive Chess Opening Map</h2>
+    <p>Click on different areas to learn more about chess openings.</p>
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/ChessSet.jpg/500px-ChessSet.jpg" 
+         usemap="#chess-openings-map" 
+         alt="Chess Board" 
+         width="500">
+
+    <map name="chess-openings-map">
+        <!-- Prostokątny obszar - King's Gambit -->
+        <area shape="rect" coords="50,50,150,150" 
+              href="https://en.wikipedia.org/wiki/King%27s_Gambit" 
+              alt="King's Gambit"
+              title="King's Gambit">
+
+        <!-- Okrągły obszar - Sicilian Defense -->
+        <area shape="circle" coords="300,150,50" 
+              href="https://en.wikipedia.org/wiki/Sicilian_Defense" 
+              alt="Sicilian Defense"
+              title="Sicilian Defense">
+
+        <!-- Wielokątny obszar - French Defense -->
+        <area shape="poly" coords="200,300,250,350,200,400,150,350" 
+              href="https://en.wikipedia.org/wiki/French_Defense" 
+              alt="French Defense"
+              title="French Defense">
+    </map>
+</section>
 
     <footer>
         <p>&copy; 2025 Chess Openings</p>
