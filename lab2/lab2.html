@@ -4,111 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chess Openings</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Chess Openings</h1>
+        <h1>Chess.com</h1>
     </header>
     
-    <article>
-        <h2>Popular Openings</h2>
-        <table border="1">
-            <caption>Examples of Openings</caption>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Moves</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>King's Gambit</td>
-                    <td>1. e4 e5 2. f4</td>
-                </tr>
-                <tr>
-                    <td>Sicilian Defense</td>
-                    <td>1. e4 c5</td>
-                </tr>
-                <tr>
-                    <td>French Defense</td>
-                    <td>1. e4 e6</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="flex-container">
+        <section>
+            <h2>Popular Openings</h2>
+            <table border="1">
+                <caption>Examples of Openings</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Moves</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>King's Gambit</td>
+                        <td>1. e4 e5 2. f4</td>
+                    </tr>
+                    <tr>
+                        <td>Sicilian Defense</td>
+                        <td>1. e4 c5</td>
+                    </tr>
+                    <tr>
+                        <td>French Defense</td>
+                        <td>1. e4 e6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
         
-        <h2>Opening Strategies</h2>
-        <ol type="I">
-            <li><strong>Control the center</strong></li>
-            <li><em>Develop your pieces</em></li>
-            <li>King's safety</li>
-        </ol>
+        <section>
+            <h2>Opening Strategies</h2>
+            <ol type="I">
+                <li><strong>Control the center</strong></li>
+                <li><em>Develop your pieces</em></li>
+                <li>King's safety</li>
+            </ol>
+        </section>
         
-        <h2>Image</h2>
-        <img src="https://images.chesscomfiles.com/uploads/v1/blog/487838.5919bfe1.668x375o.17fcae1f58ef@2x.png" alt="Adelaide Counter Gambit" style="max-width: 600px;" alt="Chessboard" width="300">
-    </article>
-    
-    <section>
-        <h2>Form</h2>
-        <form>
-            <label>Name: <input type="text" name="name"></label><br>
-            <label>Favorite opening:
-                <select>
-                    <optgroup label="Aggressive">
-                        <option>King's Gambit</option>
-                        <option>Italian Game</option>
-                    </optgroup>
-                    <optgroup label="Defensive">
-                        <option>French Defense</option>
-                        <option>Caro-Kann Defense</option>
-                    </optgroup>
-                </select>
-            </label><br>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-    
-    <section>
-        <h2>More Information</h2>
-        <details>
-            <summary>History of Chess Openings</summary>
-            <p>The history of chess openings dates back to the Middle Ages...</p>
-        </details>
-    </section>
-    
-    <section>
-        <h2>Progress</h2>
-        <progress value="70" max="100"></progress>
-    </section>
-    
-<section>
-    <h2>Interactive Chess Opening Map</h2>
-    <p>Click on different areas to learn more about chess openings.</p>
-    
-    <img src="https://thechessworld.com/wp-content/uploads/2021/03/setup-1-9-10-300x300.webp" 
-         usemap="#chess-openings-map" 
-         alt="Chess Board" 
-         width="500">
+        <section>
+            <h2>Image</h2>
+            <img src="https://images.chesscomfiles.com/uploads/v1/blog/487838.5919bfe1.668x375o.17fcae1f58ef@2x.png" alt="Adelaide Counter Gambit" style="max-width: 600px;" width="300">
+        </section>
+        
+        <section>
+            <h2>Form</h2>
+            <form>
+                <label>Name: <input type="text" name="name"></label><br>
+                <label>Favorite opening:
+                    <select>
+                        <optgroup label="Aggressive">
+                            <option>King's Gambit</option>
+                            <option>Italian Game</option>
+                        </optgroup>
+                        <optgroup label="Defensive">
+                            <option>French Defense</option>
+                            <option>Caro-Kann Defense</option>
+                        </optgroup>
+                    </select>
+                </label><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        
+        <section>
+            <h2>More Information</h2>
+            <details>
+                <summary>History of Chess Openings</summary>
+                <p>The history of chess openings dates back to the Middle Ages...</p>
+            </details>
+        </section>
 
-    <map name="chess-openings-map">
-        <!-- Prostokątny obszar - King's Gambit -->
-        <area shape="rect" coords="50,50,150,150" 
-              href="https://en.wikipedia.org/wiki/King%27s_Gambit" 
-              alt="King's Gambit"
-              title="King's Gambit">
+        <section>
+            <h2>Progress</h2>
+            <progress value="70" max="100"></progress>
+        </section>
 
-        <!-- Okrągły obszar - Sicilian Defense -->
-        <area shape="circle" coords="300,150,50" 
-              href="https://en.wikipedia.org/wiki/Sicilian_Defense" 
-              alt="Sicilian Defense"
-              title="Sicilian Defense">
-
-        <!-- Wielokątny obszar - French Defense -->
-        <area shape="poly" coords="200,300,250,350,200,400,150,350" 
-              href="https://en.wikipedia.org/wiki/French_Defense" 
-              alt="French Defense"
-              title="French Defense">
-    </map>
-</section>
+        <section class="map-section">
+            <h2>Interactive Chess Opening Map</h2>
+            <p>Click on different areas to learn more about chess openings.</p>
+            <img src="https://thechessworld.com/wp-content/uploads/2021/03/setup-1-9-10-300x300.webp" 
+                 usemap="#chess-openings-map" 
+                 alt="Chess Board" 
+                 width="500">
+        
+            <map name="chess-openings-map">
+                <area shape="rect" coords="50,50,150,150" href="https://en.wikipedia.org/wiki/King%27s_Gambit" alt="King's Gambit" title="King's Gambit">
+                <area shape="circle" coords="300,150,50" href="https://en.wikipedia.org/wiki/Sicilian_Defense" alt="Sicilian Defense" title="Sicilian Defense">
+                <area shape="poly" coords="200,300,250,350,200,400,150,350" href="https://en.wikipedia.org/wiki/French_Defense" alt="French Defense" title="French Defense">
+            </map>
+        </section>
+    </div>
 
     <footer>
         <p>&copy; 2025 Chess Openings</p>
