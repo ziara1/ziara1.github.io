@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@charset "UTF-8";
+
+
+header {
+  background-color: #0fa711;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px 0;
+}
+
+footer {
+  background-color: rgb(12.8983516484, 143.6016483516, 14.6181318681);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+section {
+  flex: 1 1 calc(33.33% - 20px); /* Aby każdy section zajmował 1/3 szerokości, z odstępem */
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+section:hover {
+  background-color: #8e8e8e;
+}
+@media (min-width: 800px) {
+  section:hover {
+    background-color: rgb(218.5, 218.5, 218.5);
+  }
+}
+
+@media (max-width: 800px) {
+  .map-section {
+    display: none;
+  }
+}
+.map-section h2, .map-section p {
+  text-align: center;
+}
+.map-section img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
